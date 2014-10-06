@@ -24,42 +24,340 @@
   <meta content="978-1430265955" property="book:isbn">
   <meta content="Pro Express.js" property="og:description">
 
-  <style>
-/*
- This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
- Please leave this notice in place, along with any additional credits below.
- ---------------------------------------------------------------
- Title: Antique
- Author: Brett Terpstra
- Description: An "antiqued" theme with off-white background and serif typography
- */
-body{font:normal .8764em/1.5em Georgia,"Times New Roman",serif;margin:0}html>body{font-size:14px}p{margin:1.3125em 0;font-size:1.1429em;line-height:1.3125em}ul{list-style:square}ul ul{list-style:circle}li{font-size:110%}li li{font-size:100%}li p{font-size:100%}h1{margin:.6563em 0;font-size:2.2857em;line-height:1.6563em}h2{margin:.875em 0;font-size:1.7143em;line-height:.875em}h3{margin:1em 0;font-size:1.5em;line-height:1em}h4{margin:1.1667em 0;font-size:1.2857em;line-height:1.1667em}h5{margin:1.3125em 0;font-size:1.1429em;line-height:1.3125em}h6{margin:1.5em 0;font-size:1em;line-height:1.5em}h1,h2,h3{font-weight:normal;border-bottom:solid 1px #ccc;padding-bottom:.4em;padding-top:1em;border-color:#b8b4a4;color:#514d3f;font-family:"Hoefler Text";line-height:1.5em}body,p,td,div{color:#45462f;word-wrap:break-word;-webkit-font-smoothing:antialiased}a{color:hsl(185,33%,33%);text-decoration:none;-webkit-transition:color .2s ease-in-out}a:hover{color:#7aa45c}strong{font-weight:600;color:#605b4b}.footnote{font-size:.8em;vertical-align:super;color:#0d6ea1}#wrapper img{max-width:100%;height:auto}dt{font-weight:bold}dd{margin-bottom:1em}@media print{body{overflow:auto;background:#fff;color:#000!important}img,pre,blockquote,table,figure{page-break-inside:avoid}#wrapper{background:#fff;position:relative;color:#000;text-indent:0;padding:1in;font-size:85%}}@media screen{::selection{background:rgba(157,193,200,.5)}h1::selection{background-color:rgba(45,156,208,.3)}h2::selection{background-color:rgba(90,182,224,.3)}h3::selection,h4::selection,h5::selection,h6::selection,li::selection,ol::selection{background-color:rgba(133,201,232,.3)}code::selection{background-color:rgba(0,0,0,.7);color:#eee}code span::selection{background-color:rgba(0,0,0,.7)!important;color:#eee!important}a::selection{background-color:rgba(255,230,102,.2)}.inverted a::selection{background-color:rgba(255,230,102,.6)}td::selection,th::selection,caption::selection{background-color:rgba(180,237,95,.5)}.inverted{background:#0b2531}body{height:100%;background:rgba(240,237,227,1)}.inverted{background:rgba(57,54,47,1)}.inverted p,.inverted td,.inverted li,.inverted h1,.inverted h2,.inverted h3,.inverted h4,.inverted h5,.inverted h6,.inverted pre,.inverted code,.inverted th,.inverted hr,.inverted strong,.inverted em,.inverted .math,.inverted dd,.inverted dt{color:rgba(240,237,227,1)!important;border-color:rgba(66,61,47,1);background:rgba(57,54,47,1)!important}.inverted hr{border-color:rgba(52,52,52,.3)}.inverted a{color:#fff;text-decoration:underline;border-bottom:0}#wrapper{color:#514d3f;overflow:auto;text-indent:0;padding:25px}}li>p:first-child{margin:0}li p{margin:.5em 0}ul ul,ul ol{margin-bottom:.4em}caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr{border-spacing:0}table{display:table;table-layout:fixed;border-collapse:collapse;empty-cells:hide;margin:0;padding:0;margin-bottom:24px;border:0}caption{display:table-caption;font-weight:bold}col{display:table-column}colgroup{display:table-column-group}tbody{display:table-row-group}tfoot{display:table-footer-group}thead{display:table-header-group}td,th{display:table-cell}th{font-weight:bold}tr{display:table-row}table{margin-top:-1px;margin-bottom:23px;border:1px solid rgba(0,0,0,0.25)}table th,table td{padding:0 1em;font-size:1.1em;line-height:23px}table thead{background-color:rgba(0,0,0,0.15)}table tbody{background-color:rgba(0,0,0,0.05)}table tfoot{background-color:rgba(0,0,0,0.15)}table tr:nth-child(odd){background-color:rgba(255,255,255,0.06)}table tr:nth-child(even){background-color:rgba(0,0,0,0.06)}table th:nth-child(odd),table td:nth-child(odd){background-color:rgba(255,255,255,0.06)}table td:nth-child(even){background-color:rgba(0,0,0,0.06)}table thead{border:1px solid rgba(0,0,0,0.15);border-bottom:1px solid rgba(0,0,0,0.2)}table tfoot{border:1px solid rgba(0,0,0,0.15);border-top:1px solid rgba(0,0,0,0.2)}figure{position:relative;display:inline-block;margin-bottom:2em}figcaption{text-align:center;position:absolute;background:rgba(0,0,0,.5);width:100%;left:0;bottom:-20px;color:rgba(255,255,255,.7);-webkit-transition:all .2s ease-in-out}figure:hover{cursor:pointer}figcaption:hover{background:rgba(0,0,0,.56);color:rgba(255,255,255,1)}.poetry pre{font-family:Georgia,Garamond,serif!important;font-style:italic;font-size:110%!important;line-height:1.6em;display:block;margin-left:1em}.poetry pre code{font-family:Georgia,Garamond,serif!important}sup,sub,a.footnote{font-size:1.4ex;height:0;line-height:1;vertical-align:super;position:relative}sub{vertical-align:sub;top:-1px}
-</style>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/ekko-lightbox.css" rel="stylesheet"> 
+  <link href="css/main.css" rel="stylesheet">
+ 
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+ 
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/simple-line-icons.css"/> 
+     </head> 
+     <!-- End of Head -->
 
-</head>
-<body class="normal">
-  <div id="wrapper">
-      <h1>Pro Express.js</h1>
-
-      <p>Practical Node.js: Building Real-world Scalable Web Apps by Azat Mardan [Apress, 2014] is available from these vendors:</p>
-      <figure>
-        <a href="http://amzn.to/1pZdGFo"><img src="/cover.jpg" width="200"/></a>
-      </figure>
-      <ul>
-      <li><a href="http://amzn.to/1pZdGFo">Amazon.com</a></li>
-      <li><a href="http://www.apress.com/9781484200384">Apress</a></li>
-      <li><a href="http://www.barnesandnoble.com/w/pro-expressjs-apress/1119879199">Barnes&Noble</a></li>
-      </ul>
+<body>
+  <div id="preloader">
+    <div id="status"></div>
   </div>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- ******************** MASTHEAD SECTION ******************** --> 
+  <main id="top" class="masthead" role="main">
+    <div class="container">
+      <div class="col-md-6"> 
+       
+ 
+        <h3 class="w">Pro Express.js <br><b> Practical Node.js:</b></h3><br><h4>Building Real-world Scalable Web Apps by Azat Mardan <br>[Apress, 2014]</h4></br>
+        </h4></br>
+      <br><br><i class="icon-book-open w"></i><br> <br>    
+           <a href="#purchase" type="button" class="btn btn-warning btn-outline"> <h5 class="w"></b><br> BUY NOW !</h5> </a>
+           
+        
+           
+          </div>
+          <div class="col-md-6"> 
+        <img class="img-responsive floating" src="images/cover.jpg">
+          </div>
+       
+    </div><!--/container -->
+  </main><!--/main -->
+ 
 
-    ga('create', 'UA-36472155-7', 'auto');
-    ga('send', 'pageview');
+    <!-- ******************** FEATURES SECTION ******************** --> 
+  <div class="container" id="explore">
+ 
+    <div class="section-title">
+      <h2>See more about our book</h2>
+        <a href="https://www.behance.net/exofive" class="btn btn-success btn-lg">Pro Express.js</a>  
+    </div>
 
-  </script>
+    <section class="row heroimg breath">
+      <div class="col-md-3 text-center"> 
+        <div class="thumbnail">
+        <img class="a" src="images/engineering-50.png">
+        <h5>Express.js API reference</h5>
+         <p>Express.js API reference, quick start guides, 20+ meticulously explained examples and tutorials — over 239 pages (print format) with more than 60 illustrations</p> 
+      </div><!-- col-lg-4 -->
+<br/>
+      <div class="thumbnail">
+        <img class="a" src="images/water-50.png">  
+        <h5>Quick Start</h5>
+         <p>In this part we’ll briefly go over what is Express.js, install it, build a few simple applications and begin to touch on configurations. </p> 
+      </div><!-- col-lg-4 -->
+            <br/>
+      <div class="thumbnail">
+        <img class="a" src="images/bookmark-50.png">
+        <h5>The Interface</h5>
+        <p> This part can be used as a stand alone reference for the Express.js API, because it contains description of all the main methods and properties, as well as short examples and exaplanations</p> 
+         
+      </div><!-- col-lg-4 --> 
+      </div>
+      <div class="col-md-6 text-center"> 
+        <div class="thumbnail">
+        <img src="images/cover.jpg" alt="flat-mockup-template">
+        </div>
+      </div>
+      <div class="col-md-3 text-center"> 
+        <div class="thumbnail">
+        <img class="a" src="images/design-50.png">
+        <h5>Tips and Tricks</h5>
+        <p> The best industry practices from the trenches of running production Node.js for everything at the Joyent/Node.js partner Storify. Some topics involve: </p>  
+      </div><!-- col-lg-4 -->
+<br/>
+      <div class="thumbnail">
+        <img class="a" src="images/glasses-50.png">
+        <h5>Tutorials and Examples</h5>
+        <p> Hands-on REST API servers with NPM libraries (superagent, Mongoose, Mongoskin, Mocha)third-party services (Storify API, AngelList), databases (MongoDB) and front-end clients (Backbone.js).</p>  
+      </div><!-- col-lg-4 -->
+            <br/>
+      <div class="thumbnail">
+        <img class="a" src="images/umbrella-50.png">
+        <h5>in Addition</h5>
+      <p> In addition to four aforementioned major examples, there are many other smaller ones. Their full source code is available for examination at <a href="http://github.com/azat-co/expressjsguide">github.com/azat-co/expressjsguide</a></p>   
+         
+      </div><!-- col-lg-4 --> 
+      </div>
+      </section>
+    </div>  
+     <!--/section -->
+  
+    
+    <div class="highlight testimonials">
+      <div class="container">
+      <br> 
+      <h3 class="text-center">What they say about us!</h3>
+      <hr>
+     
+          <div class="col-md-4">
+            <div class="testblock">Lorem Ipsum is simply dummy   when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+            <div class="clientblock"> 
+              <img src="images/customer-img-1.jpg" alt=".">
+              <p><strong>John Doe</strong> <br>
+                Founder of <a href="index.html#">Blacktie.co</a>
+              </p>
+            </div>
+          </div><! --/col-md-6 --> 
+          
+          <div class="col-md-4">
+            <div class="testblock">Lorem Ipsum is simplywhen an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+            <div class="clientblock"> 
+              <img src="images/customer-img-2.jpg" alt=".">
+              <p><strong>Richard Sommer</strong> <br>
+                CEO of <a href="index.html#">Blacktie.co</a>
+              </p>
+            </div>
+          </div><! --/col-md-6 -->
+          <div class="col-md-4">
+            <div class="testblock">Lorem Ipsum is simply when an unknown printer took a galley of type and scrambled it to make a type specimen book. </div>
+            <div class="clientblock"> 
+              <img src="images/customer-img-1.jpg" alt=".">
+              <p><strong>John Doe</strong> <br>
+                Founder of <a href="index.html#">Blacktie.co</a>
+              </p>
+            </div>
+          </div><! --/col-md-6 -->
+          
+           
+         
+    </div><!-- row -->
+  </section>  
+    </div>
+     
+    </section><!--/section -->
+<section class="desc">    
+  <div class="container">
+    <div class="row text-center">
+      <br><br>
+       
+      <h1>Ebook</h1> 
+     <img class="img-responsive center" src="images/ebook.png">
+     <button href="https:#" class="btn btn-info btn-lg">1 chapter free download</button> 
+     <hr>
+     <h3 class="text-center">preview pages</h3> 
+<a href="images/ebook2.png" data-toggle="lightbox" data-gallery="multiimages" data-title="ebook" class="col-sm-4">
+                 <img src="images/ebook2.png" class="img-responsive"></a>
+        
+ <a href="images/ebook.png" data-toggle="lightbox" data-gallery="multiimages" data-title="ebook" class="col-sm-4">
+ <img src="images/ebook2.png" class="img-responsive"></a>
+              
+ <a href="images/ebook2.png" data-toggle="lightbox" data-gallery="multiimages" data-title="ebook" class="col-sm-4">
+ <img src="images/ebook2.png" class="img-responsive"></a>        
+        
+       
+        </div>
+        </div>
+        </div>
+</section>
+      
+ <section id="faq">
+    <div class="container">
+      <h3 class="text-center">FAQ</h3>
+      <div class="row">
+        <div class="col-md-6">
+            <div class="panel">
+              <a class="panel-heading" data-toggle="collapse" href="#question1">What is cust ?</a> 
+              <div id="question1" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel. 
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <a class="panel-heading collapsed" data-toggle="collapse" href="#question2">Anubis is a gods egypt ?</a>
+              <div id="question2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel. 
+                </div>
+              </div>
+            </div>
+             
+        </div>
+        <div class="col-md-6">
+            <div class="panel">
+              <a class="panel-heading collapsed" data-toggle="collapse" href="#question4">Frequently asked questions #4</a> 
+              <div id="question4" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel. 
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <a class="panel-heading collapsed" data-toggle="collapse" href="#question5">Frequently asked questions #5</a>
+              <div id="question5" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum auctor interdum. Aenean egestas vehicula purus in euismod. Quisque gravida commodo velit, eget porta leo sagittis vel. 
+                </div>
+              </div>
+            </div>
+             
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ END-->
+  
+
+      
+
+      <!-- ******************** PRICING LIST ******************** -->   
+    <div class="pricing">
+      <a name="purchase"></a>
+      <div class="section-title">
+         
+      <br>  
+        <h2> Available From These Vendors </h2>
+         
+      </div>
+      <section class="row breath planpricing">
+      
+        <div class="col-md-3">
+          <div class="pricing color1">
+            <div class="planname">Amazon</div>
+            <div class="price"> <span class="curr">Pre-order is available</span><span class="per"></span></div>
+             
+          </div><!--/pricing -->
+        </div><!--/col-md-4-->
+        <div class="col-md-3">
+          <div class="pricing color2">
+            <div class="planname">Apress</div>
+            <div class="price"> <span class="curr">Alpha(early access) version is available</span><span class="per"></span></div>
+            <div class="billing"></div> 
+          </div><!--/pricing -->
+        </div><!--/col-md-4-->
+        <div class="col-md-3">
+          <div class="pricing color4">
+            <div class="planname">Barnes&Nobles</div>
+            <div class="price"> <span class="curr"> 
+           </span><span class="per">  Pre-order is available
+              </span></div>
+            <div class="billing"></div> 
+            <div class="billing"></div> 
+          </div><!--/pricing -->
+        </div><!--/col-md-4-->
+        
+         
+    
+      </section><!-- /section planpricing -->
+ </div>
+
+      
+     
+      <!-- ******************** FOOTER ******************** -->   
+    <main class="footercta" role="main">
+      <div class="container">
+        <h3 class="w"> I am available</h3>
+                <img class="img-responsive img-circle center" src="images/author-photo-small.jpg">
+                <h4 class="w">Azat Mardan</h4>
+                <p class="w">
+                 <p>Azat Mardan has over 12 years of experience in web, mobile and software development. With a Bachelor’s Degree in Informatics and a Master of Science in Information Systems Technology degree, Azat possesses deep academic knowledge as well as extensive practical experience.</p>
+
+                    <p>Currently, Azat works as a Team Lead / Senior Software Engineer at <a href="http://docusign.com">DocuSign</a>, where his team rebuilds 50 million user product (DocuSign web app) using the tech stack of Node.js, Express.js, Backbone.js, CoffeeScript, Jade, Stylus and Redis.</p>
+
+                    <p>Recently, he worked as an engineer at the curated social media news aggregator website, <a href="http://storify.com">Storify.com</a> (acquired by <a href="http://livefyre.com">LiveFyre</a>) which is used by BBC, NBC, CNN, The White House and others. Storify runs everything on Node.js unlike other companies. It&#8217;s the maintainer of the open-source library <a href="http://npmjs.org/jade-browser">jade-browser</a>. </p>
+
+                    <p>Before that, Azat worked as a CTO/co-founder at <a href="http://www.crunchbase.com/company/gizmo">Gizmo</a> — an enterprise cloud platform for mobile marketing campaigns, and has undertaken the prestigious <a href="http://500.co/">500 Startups</a> business accelerator program. </p>
+
+                    <p>Prior to this, Azat was developing he developed mission-critical applications for government agencies in Washington, DC, including the <a href="http://nih.gov">National Institutes of Health</a>, the <a href="http://ncbi.nlm.nih.gov">National Center for Biotechnology Information</a>, and the <a href="http://fdic.gov">Federal Deposit Insurance Corporation</a>, as well as <a href="http://lockheedmartin.com">Lockheed Martin</a>. </p>
+
+                    <p>Azat is a frequent attendee at Bay Area tech meet-ups and hackathons (<a href="http://angelhack.com">AngelHack</a> hackathon ’12 finalist with team <a href="http://fashionmetric.com">FashionMetric.com</a>).</p>
+
+                    <p>In addition, Azat teaches technical classes at <a href="http://generalassemb.ly">General Assembly</a>, <a href="http://hackreactor.com">Hack Reactor</a>, <a href="http://parisoma.com">pariSOMA</a> and <a href="http://marakana.com">Marakana</a> (acquired by Twitter) to much acclaim.</p>
+
+                    <p>In his spare time, he writes about technology on his blog: <a href="http://webapplog.com">webAppLog.com</a> which is <a href="http://expressjsguide.com/assets/img/expressjs-tutorial.png">number one</a> in &#8220;express.js tutorial&#8221; Google search results. Azat is also the author of <a href="http://expressjsguide.com">Express.js Guide</a>, <a href="http://rpjs.co">Rapid Prototyping with JS</a> and <a href="http://leanpub.com/ohmyjs">Oh My JS</a>; and the creator of open-source Node.js projects, including <a href="http://npmjs.org/expressworks">ExpressWorks</a>, <a href="http://npmjs.org/mongoui">mongoui</a> and <a href="http://hackhall.com">HackHall</a>. </p>
+         
+      </div><!--/container -->
+    </main><!--/main -->
+ 
+    <div class="container">
+      <section class="row breath">
+        <div class="col-md-12 footerlinks">
+                     <p>Pro Express.js: The Comprehensive Book on Pro Express.js &copy; 2014 <a href="http://azat.co">Azat Mardan</a>. All rights reserved.</p>
+            <p class="text-center">
+           <a href="#" ><i class="icon-social-twitter"></i></a>  
+             <a href="#" ><i class="icon-social-facebook"></i></a> 
+           <a href="#" ><i class="icon-social-dribbble"></i></a>
+           </p>
+        </div>
+      </section><!--/section -->
+    </div><!--/container -->
+ 
+ 
+ 
+ <!--/javascript -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/nicescroll.js"></script>
+<script src="js/lightbox.min.js"></script> 
+ 
+<script>
+ $(window).load(function() { 
+  //Preloader 
+  $('#status').delay(300).fadeOut(); 
+  $('#preloader').delay(300).fadeOut('slow');
+  $('body').delay(550).css({'overflow':'visible'});
+})
+$(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+}); 
+
+ $(function() {
+    $('.scrollto, .gototop').bind('click',function(event){
+     var $anchor = $(this);
+     $('html, body').stop().animate({
+         scrollTop: $($anchor.attr('href')).offset().top
+          }, 1500,'easeInOutExpo');
+     event.preventDefault();
+      });
+  });
+  $(window).load(function(){
+    $('.preloader').fadeOut(3000); // set duration in brackets
+    init();
+});      
+
+</script>
+ 
 </body>
 </html>

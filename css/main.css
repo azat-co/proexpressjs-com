@@ -1,0 +1,571 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:100,300,700,800);
+
+/*---------------- FONT (OPEN SANS) IMPORT FROM GOOGLE FONTS ---------------*/
+
+
+
+
+
+/*----------------------------------------------------------------------------------------
+										COMMON STYLES
+-----------------------------------------------------------------------------------------*/
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	color: #444;
+	line-height: 1.8;
+}
+
+a,
+a:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 80px;
+	font-weight: 800;
+}
+
+h2 {
+	font-size: 50px;
+	font-weight: 800;
+	 
+}
+
+h3 {
+	font-size: 40px;
+	font-weight: 100;
+}
+
+h4 {
+	font-size: 30px;
+	font-weight: 300;
+}
+h5 {
+	font-size: 24px;
+	font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4 {
+	color: #222;
+	text-transform: uppercase;
+}
+
+ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+}
+
+
+a{color:#5173bd;}
+a:hover,a:focus{color:#5173bd;}
+i {
+    font-size: 40px;
+}
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon-screen-smartphone {
+    font-size: 45px;
+}
+.w{
+    color:#fff;
+}
+.breath{margin:50px auto;}
+
+.highlight{background:#f4f4f4;margin-top:40px;}
+ /* preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(../images/status.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+ 
+ 
+ /* MASTHEAD SECTION */ 
+ 
+
+.masthead{
+	position:relative;
+	padding:80px 15px;
+	color:#FFF;
+	text-align:center;
+	text-shadow:0 1px 0 rgba(0,0,0,.1);
+	background-color:#6883cc;
+	background-image:url("../images/leaf.jpeg");
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	}
+
+.masthead .container{
+	animation:fadein 2s;
+	-moz-animation:fadein 2s;
+	-webkit-animation:fadein 2s;
+	-o-animation:fadein 2s;
+	}
+
+ .masthead1{
+	position:relative;
+	padding:80px 15px;
+	color:#FFF;
+	text-align:center;
+	text-shadow:0 1px 0 rgba(0,0,0,.1);
+	background-color:#6883cc;
+	background-image:url("../images/bground.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	}
+
+.masthead1 .container{
+	animation:fadein 2s;
+	-moz-animation:fadein 2s;
+	-webkit-animation:fadein 2s;
+	-o-animation:fadein 2s;
+	}
+
+ 
+ /* General button style (reset) */
+ .btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+.btn-warning.btn-outline {
+    color: #f1c40f;
+    
+}
+.btn-large {
+	font-size:18px;
+	padding:20px 50px;
+	margin:5px 10px;
+}
+.btn-success {
+	background-color: #2ecc71;
+	background-image:none;
+	border: 0;
+	-webkit-box-shadow: 0 3px 0 rgba(2, 154, 67, 1);
+	box-shadow: 0 3px 0 rgba(2, 154, 67, 1);
+	line-height: 1.8;
+}
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+	background-color: #29c36a;
+	color:#FFF;
+	border: 0;
+	-webkit-box-shadow: 0 3px 0 rgba(2, 139, 61, 1);
+	box-shadow: 0 3px 0 rgba(2, 139, 61, 1);
+}
+.btn-primary {
+	background-color: #2db6d8;
+	background-image:none;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+	background-color: #209ab8!important;
+	color:#FFF!important;
+}
+ 
+ 
+.btn,.btn-lg,.input-lg{border-radius:3px;}
+
+ 
+
+.btn-lg,.btn-group-lg>.btn{
+	padding:10px 28px;
+	height:52px;
+	}
+ 
+
+
+/*==============================================
+floating
+==============================================
+*/
+
+.floating {
+	animation-name: floating;
+	-webkit-animation-name: floating;
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translateY(0%);	
+	}
+	50% {
+		transform: translateY(8%);	
+	}	
+	100% {
+		transform: translateY(0%);
+	}			
+}
+
+@-webkit-keyframes floating {
+	0% {
+		-webkit-transform: translateY(0%);	
+	}
+	50% {
+		-webkit-transform: translateY(8%);	
+	}	
+	100% {
+		-webkit-transform: translateY(0%);
+	}			
+}
+
+/*
+/*==========  EXPLORE ==============*/
+
+.section-title {
+	text-align:center;
+	margin-top:60px;
+	margin-bottom:30px;
+}
+.section-title h2 {
+	color:#384047;
+}
+.section-title h4 {
+	color:#94a3a8;
+}
+.heroimg img, .clientlogo img {
+	max-width:100%;
+}
+/*==========  FEATURES ==============*/
+.desc {
+    background-color: #f2f2f2;
+}
+.features {
+	margin:25px 0;
+}
+.thumbnail {
+	border:0;
+	text-align:center;
+}
+.thumbnail .caption p {
+	color: #94a3a8;
+}
+.thumbnail col-md-6{
+border-image-width: 100px;
+}
+/*Hover Animation*/
+
+.thumbnail img {
+	-moz-transition:all 0.6s ease;
+	-webkit-transition:all 0.6s ease;
+	-ms-transition:all 0.6s ease;
+	-o-transition:all 0.6s ease;
+	transition:all 0.6s ease;
+}
+.thumbnail:hover img {
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+	-o-transform:scale(1.05);
+	-ms-transform:scale(1.05);
+	transform:scale(1.05);
+	z-index:2;
+}
+/*==========  TESTIMONIALS ==============*/
+
+.testblock {
+	width:100%;
+	height:auto;
+	padding:20px;
+	background:#FFF;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	position:relative;
+	line-height:28px;
+	font-size:16px;
+}
+.testblock:after {
+	top: 100%;
+	left: 20%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #ffffff;
+	border-width: 15px;
+	margin-left: -15px;
+}
+.clientblock {
+	margin-top:40px;
+	margin-left:10px;
+}
+.clientblock img {
+	float:left;
+	-webkit-border-radius:100%;
+	-moz-border-radius:100%;
+	border-radius:100%;
+}
+.clientblock p {
+	padding-left:80px;
+	padding-top:13px;
+}
+.clientblock p strong {
+	color:#384047;
+	font-size:16px;
+}
+/* Animation */
+
+.testblock {
+	-moz-transition:all 0.6s ease;
+	-webkit-transition:all 0.6s ease;
+	-ms-transition:all 0.6s ease;
+	-o-transition:all 0.6s ease;
+	transition:all 0.6s ease;
+}
+.testblock:hover {
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+	-o-transform:scale(1.05);
+	-ms-transform:scale(1.05);
+	transform:scale(1.05);
+	z-index:2;
+}
+
+/*==========  F.A.Q ==============*/
+.panel{
+	background: #f2f2f2;
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+	margin-bottom: 40px;
+	text-align: left;
+}
+
+.panel .panel-heading {
+	color: #222;
+	background: #f1c40f;
+	padding: 25px 25px 25px 75px;
+	display: block;
+	position: relative;
+	font-size: 20px;
+	border: 0;
+	border-radius: 0;
+}
+
+.panel .panel-heading:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 30px;
+	top: 33px;
+	height: 20px;
+	width: 20px;
+	background: url() no-repeat 0 -9px;
+	margin-top: 9px;
+	opacity: 0.25;
+}
+
+.panel .collapsed.panel-heading:before {
+	height: 20px;
+	background: url(../images/cross.png) no-repeat center;
+	margin-top: 0;
+}
+
+.panel .panel-body {
+	padding: 30px;
+	color: #666;
+}
+
+
+
+
+
+/*==========  PLANS AND PRICING ==============*/
+
+.pricing {
+	padding:25px;
+	color:#FFF;
+	border-style: double;
+	border-width: 5px;
+	border-color: #222;
+	text-align:center;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.pricing .planname {
+	text-transform:uppercase;
+	font-weight:600;
+	color: #333;
+}
+.pricing .price {
+	font-size:52px;
+    color: #222;
+    font-weight:300;
+	margin:10px 0;
+}
+.pricing .billing {
+	text-transform:uppercase;
+	color:#333;
+	opacity:0.7;
+}
+.pricing .price .curr {
+	display:inline-block;
+	color: #222;
+	font-size:20px;
+	vertical-align:super;
+}
+.pricing .price .per {
+	display:inline-block;
+	color: #222;
+	font-size:20px;
+	vertical-align: baseline;
+}
+.color1 {
+	background-color:#f1c40f;
+}
+.color2 {
+	background-color:#1abc9c;
+}
+.color3 {
+	background-color:transparent;
+}
+.color4 {
+    background-color: #2ecc71;
+}
+/* Animation */
+
+.pricing {
+	-moz-transition:all 0.6s ease;
+	-webkit-transition:all 0.6s ease;
+	-ms-transition:all 0.6s ease;
+	-o-transition:all 0.6s ease;
+	transition:all 0.6s ease;
+}
+.pricing:hover {
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+	-o-transform:scale(1.05);
+	-ms-transform:scale(1.05);
+	transform:scale(1.05);
+	z-index:2;
+}
+
+ 
+
+/*========== FOOTER ==============*/
+
+
+.footercta {
+	padding: 60px 15px;
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
+	background-color: #6883cc;
+	background-image:url("../images/leaf.jpeg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.footerlinks {
+	text-align:center;
+}
+.footerlinks a {
+	text-align:center;
+	padding:0 13px;
+	display:inline-block;
+	padding-bottom: 15px;
+}
+
+
+
+/*========== CUSTOM MEDIA QUERIES==============*/
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 991px) {
+ h1 {
+font-size: 35px;
+line-height: 50px;
+margin: 15px 0;
+}
+ h2 {
+font-size: 35px;
+}
+ .testimonials [class*="col-"]:not(:first-child) {
+ margin-top: 40px;
+}
+ .planpricing [class*="col-"]:not(:first-child) {
+ margin-top: 30px;
+}
+ .breath {
+margin: 30px auto;
+}
+}
+ @media (max-width: 767px) {
+ h1 {
+font-size: 30px;
+line-height: 40px;
+}
+ h2 {
+font-size: 30px;
+line-height: 40px;
+}
+ .subscribe [class*="col-"]:not(:first-child) {
+ margin-top: 30px;
+}
+ .masthead {
+padding: 40px 15px;
+}
+}
+ @media (max-width: 480px) {
+	 /*Media Queries for smaller devices*/
+	 .masthead {
+	background-attachment: scroll;
+}
+
+}
+ 
+ 
