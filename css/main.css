@@ -33,7 +33,7 @@ h1 {
 h2 {
 	font-size: 50px;
 	font-weight: 800;
-	 
+	 text-align: center;
 }
 
 h3 {
@@ -78,7 +78,8 @@ img.center {
     font-size: 45px;
 }
 .w{
-    color:#fff;
+
+    color:;
 }
 .breath{margin:50px auto;}
 
@@ -141,7 +142,7 @@ img.center {
 	text-align:center;
 	text-shadow:0 1px 0 rgba(0,0,0,.1);
 	background-color:#6883cc;
-	background-image:url("../images/bground.jpg");
+	background-image:url("../images/leaf.jpg");
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-attachment:fixed;
@@ -160,6 +161,13 @@ img.center {
 
  
  /* General button style (reset) */
+ .btn-lg{
+ 	font-size: 25px;
+ 	color: black;
+ 	background-color: red;
+
+
+ }
  .btn-outline {
     background-color: transparent;
     color: inherit;
@@ -170,7 +178,7 @@ img.center {
     
 }
 .btn-large {
-	font-size:18px;
+	font-size: 22px;
 	padding:20px 50px;
 	margin:5px 10px;
 }
@@ -252,7 +260,11 @@ floating
 }
 
 /*
-/*==========  EXPLORE ==============*/
+/*==========  Book Highlights ==============*/
+
+.img-book{
+	width: 100%;
+}
 
 .section-title {
 	text-align:center;
@@ -272,6 +284,10 @@ floating
 .desc {
     background-color: #f2f2f2;
 }
+.desc ul {
+	list-style: square;
+	padding: 0 0 10px 25px;
+}
 .features {
 	margin:25px 0;
 }
@@ -285,6 +301,14 @@ floating
 .thumbnail col-md-6{
 border-image-width: 100px;
 }
+.highlights-content .thumbnail img {
+	width: 50px;
+}
+
+.heroimg .thumbnail {
+	padding: 15% 10% 0 10%
+}
+
 /*Hover Animation*/
 
 .thumbnail img {
@@ -303,6 +327,42 @@ border-image-width: 100px;
 	z-index:2;
 }
 /*==========  TESTIMONIALS ==============*/
+
+/*
+ * Testimonial
+ */
+
+#testimonial, #packages
+{
+	background:#f2f2f2;
+}
+blockquote{
+	border:none;
+	padding:0;
+	text-align:center;
+	margin:0;
+}
+blockquote small{
+	color:#b8b8b8;
+	font-size:12px;
+}
+.testi-thumb{
+	margin-bottom:20px;
+}
+.testi-thumb img{
+	background: #b8b8b8;
+	border-radius:4px;
+}
+.testi-text{
+	font-size:18px;
+	line-height:22px;
+	margin-bottom:20px;
+}
+.testi-user{
+	color:#d9563c;
+	margin-bottom:5px;
+}
+
 
 .testblock {
 	width:100%;
@@ -368,51 +428,6 @@ border-image-width: 100px;
 	z-index:2;
 }
 
-/*==========  F.A.Q ==============*/
-.panel{
-	background: #f2f2f2;
-	border-radius: 0;
-	box-shadow: none;
-	border: none;
-	margin-bottom: 40px;
-	text-align: left;
-}
-
-.panel .panel-heading {
-	color: #222;
-	background: #f1c40f;
-	padding: 25px 25px 25px 75px;
-	display: block;
-	position: relative;
-	font-size: 20px;
-	border: 0;
-	border-radius: 0;
-}
-
-.panel .panel-heading:before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 30px;
-	top: 33px;
-	height: 20px;
-	width: 20px;
-	background: url() no-repeat 0 -9px;
-	margin-top: 9px;
-	opacity: 0.25;
-}
-
-.panel .collapsed.panel-heading:before {
-	height: 20px;
-	background: url(../images/cross.png) no-repeat center;
-	margin-top: 0;
-}
-
-.panel .panel-body {
-	padding: 30px;
-	color: #666;
-}
-
 
 
 
@@ -420,7 +435,7 @@ border-image-width: 100px;
 /*==========  PLANS AND PRICING ==============*/
 
 .pricing {
-	padding:25px;
+	padding:10px;
 	color:#FFF;
 	border-style: double;
 	border-width: 5px;
@@ -495,7 +510,7 @@ border-image-width: 100px;
 
 .footercta {
 	padding: 60px 15px;
-	color: #FFF;
+	color: ;
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 	background-color: #6883cc;
