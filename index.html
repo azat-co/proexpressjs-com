@@ -35,32 +35,43 @@
  
   <link rel="shortcut icon" href="images/favicon.png">
   <link rel="stylesheet" href="css/simple-line-icons.css"/> 
-     </head> 
-     <!-- End of Head -->
-<body>
 
-<div id="preloader">
-  <div id="status"></div>
-</div>
+  <link href="plugins/QuotesRotator/css/QuotesRotator.css" rel="stylesheet" type="text/css" />
+  <script src="plugins/QuotesRotator/js/modernizr.custom.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+
+
+  </head>    
+       <!-- End of Head -->
+  <body>
+
+  <div id="preloader">
+    <div id="status"></div>
+  </div>
     
 <!-- ********* MASTHEAD SECTION *******--> 
 
-<main id="top" class="masthead" role="main">
+<main id="top" class="masthead" class="tinted-image" role="main">
   <div class="container">
-    <div class="col-md-6"> 
-      <h3 class="w">Pro Express.js <br><b> Practical Node.js: <br> Building Real-world Scalable Web Apps by Azat Mardan</h3><br><h4>[Apress, 2014]</h4></br>
-      </h4>
-      <br><i class="icon-book-open w"></i></b> 
-      <h5><a href="#purchase" class="btn btn-info btn-lg">BUY NOW!</h5></a>
-      </div><!-- /col-md-6 -->
+    <div class="col-md-6">
+      <div class="message">
+        <h2 class="w">PRO EXPRESS.JS:</h2>
+          <h3>The Comprehensive Book on Express.js—The Node.js Framework</h3> <h3 id="hlight">by Azat Mardan</h3>
+         <h4>[Apress,2014]</h4>
+          <i class="icon-book-open w"></i>
+        </div> 
+        <a href="#purchase" type="button" class="btn btn-warning btn-outline" class="w">
+         <h5><b>Buy The Book!</b></h5></a>
+        </div><!-- /col-md-6 --> 
 
-      <div class="col-md-4"> 
-      <img class="img-book" src="images/cover.jpg">
-        </div>
-     </div><!--/container -->
-</main><!--/main -->
+          <div class="col-md-6 text-center"> 
+            <img class="img-book" src="images/cover.jpg">
+          </div>
+        </div><!--/container -->
+      </main><!--/main -->
 
-        <!-- End Masterhead -->
+          <!-- End Masterhead -->
  
 
     <!-- ********* HIGHLIGHTS SECTION ************ --> 
@@ -80,198 +91,192 @@
           <img class="a" src="images/map.png">
           <h5>Express.js API reference</h5>
            <p>Express.js API reference, quick start guides, 20+ meticulously explained examples and tutorials — over 239 pages (print format) with more than 60 illustrations</p> 
-          <p class="text-lead">Foreword by Anatoliy Chakkaev (<a href="https://twitter.com/1602">@1602</a>), the creator of <a href="http://compoundjs.com">CompoundJS</a> and <a href="http://jugglingdb.co">JugglingDB</a>. </p>
+
+          <a href="#more" data-toggle="collapse" data-target="#more-api-ref">
+            See More...
+          </a>
+
+          <div id="more-api-ref" class="collapse">
+            <p class="text-lead">Foreword by Anatoliy Chakkaev (<a href="https://twitter.com/1602">@1602</a>), the creator of <a href="http://compoundjs.com">CompoundJS</a> and <a href="http://jugglingdb.co">JugglingDB</a>. </p>
+
+          </div>
+
         </div><!-- end thumbnail -->
       <!-- </div> -->
       <br/>
 
-      <div class="thumbnail"> 
-        <img class="a" src="images/cog.png">  
-        <h5>Quick Start</h5>
-         <p>In this part we’ll briefly go over what is Express.js, install it, build a few simple applications and begin to touch on configurations. </p> 
-         <ul>
-          <li>What is Express.js</li>
-          <li>Installation</li>
-          <li>Hello World Example</li>
-          <li>CLI</li>
-          <li>MVC Structure and Modules</li>
-        </ul>
-       </div>
-       <br/>
-
-        <div class="thumbnail">
-          <img class="a" src="images/plug.png">
-          <h5>The Interface</h5>
-          <p> This part can be used as a stand alone reference for the Express.js API, because it contains description of all the main methods and properties, as well as short examples and exaplanations</p> 
+        <div class="thumbnail"> 
+          <img class="a" src="images/cog.png">  
+          <h5>Quick Start</h5>
+           <p>In this part we’ll briefly go over what is Express.js, install it, build a few simple applications and begin to touch on configurations. </p> 
+            <a href="#more" data-toggle="collapse" data-target="#more-api-start">
+              See More...
+            </a>
+           <div id="more-api-start" class="collapse">
           <ul>
-                  <li>Configuration and Settings</li>
-                  <li>Middlewares</li>
-                  <li>Parameters</li>
-                  <li>Routing</li>
-                  <li>Request and Response</li>
-                  <li>Running an App</li>
-                  <li>Error Handling</li>
+            <li>What is Express.js</li>
+            <li>Installation</li>
+            <li>Hello World Example</li>
+            <li>CLI</li>
+            <li>MVC Structure and Modules</li>
           </ul>
          </div>
-        </div> <!-- col-md-3 -->
+         </div><!-- /collapse -->
+         <br/>
+
+          <div class="thumbnail">
+            <img class="a" src="images/plug.png">
+            <h5>The Interface</h5>
+            <p> This part can be used as a stand alone reference for the Express.js API, because it contains description of all the main methods and properties, as well as short examples and exaplanations</p> 
+            <a href="#more" data-toggle="collapse" data-target="#more-api-interface">
+                See More...
+              </a>
+             <div id="more-api-interface" class="collapse">
+              <ul>
+                    <li>Configuration and Settings</li>
+                    <li>Middlewares</li>
+                    <li>Parameters</li>
+                    <li>Routing</li>
+                    <li>Request and Response</li>
+                    <li>Running an App</li>
+                    <li>Error Handling</li>
+            </ul>
+           </div>
+           </div><!-- /collapse -->
+          </div> <!-- col-md-3 -->
 
         <!-- Middle image -->
         <div class="col-md-6 text-center heroimg">
           <div class="thumbnail">
-            <img src="images/cover.jpg" alt="flat-mockup-template">
+            <img src="images/cover2.png" alt="flat-mockup-template">
           </div>
         </div><!-- col-md-6 -->
 
-        <div class="col-md-3 text-center highlights-content"> 
-          <div class="thumbnail">
-            <img class="a" src="images/code.png">
-            <h5>Tips and Tricks</h5>
-            <p> The best industry practices from the trenches of running production Node.js for everything at the Joyent/Node.js partner Storify. Some topics involve: </p> 
-            <ul class="unstyled list-bullet">
-              <li>Abstraction</li>
-              <li>Streams</li>
-              <li>Redis</li>
-              <li>Clusters</li>
-              <li>Authentication</li>
-              <li>Stylus, LESS and SASS</li>
-              <li>Domains</li>
-              <li>Security</li>
-              <li>Socket.IO</li>
-            </ul>
-          </div>
+          <div class="col-md-3 text-center highlights-content"> 
+            <div class="thumbnail">
+              <img class="a" src="images/code.png">
+              <h5>Tips and Tricks</h5>
+              <p> The best industry practices from the trenches of running production Node.js for everything at the Joyent/Node.js partner Storify. Some topics involve: </p> 
+              <a href="#more" data-toggle="collapse" data-target="#more-api-tips">
+                See More...
+              </a>
+             <div id="more-api-tips" class="collapse">
+              <ul>
+                <li>Abstraction</li>
+                <li>Streams</li>
+                <li>Redis</li>
+                <li>Clusters</li>
+                <li>Authentication</li>
+                <li>Stylus, LESS and SASS</li>
+                <li>Domains</li>
+                <li>Security</li>
+                <li>Socket.IO</li>
+              </ul>
+            </div>
+            </div><!-- /collapse -->
         
-          <div class="thumbnail">
-            <img class="a" src="images/book.png">
-            <h5>Tutorials and Examples</h5>
-            <p> Hands-on REST API servers with NPM libraries (superagent, Mongoose, Mongoskin, Mocha)third-party services (Storify API, AngelList), databases (MongoDB) and front-end clients (Backbone.js).</p> 
-            <ul class="unstyled list-bullet">
-              <li>Instagram Gallery</li>
-              <li>Todo App</li>
-              <li>REST API</li>
-              <li>HackHall</li>
-            </ul>
- 
-          </div>
-          
-          <div class="thumbnail">
-            <img class="a" src="images/layers.png">
-            <h5>in Addition</h5>
-            <p> In addition to four aforementioned major examples, there are many other smaller ones. Their full source code is available for examination at <a href="http://github.com/azat-co/expressjsguide">github.com/azat-co/expressjsguide</a></p>
-          </div>
-        </div> <!-- col-md-3 -->
-      </section>
-    </div>  
-   </section>
-   
-    <div class="highlight testimonials">
-      <div class="container">
+              <div class="thumbnail">
+                <img class="a" src="images/book.png">
+                <h5>Tutorials and Examples</h5>
+                <p> Hands-on REST API servers with NPM libraries (superagent, Mongoose, Mongoskin, Mocha)third-party services (Storify API, AngelList), databases (MongoDB) and front-end clients (Backbone.js).</p> 
+               <a href="#more" data-toggle="collapse" data-target="#more-tutorial">
+                  See More...
+                </a>
+               <div id="more-tutorial" class="collapse">
+              <ul>
+                  <li>Instagram Gallery</li>
+                  <li>Todo App</li>
+                  <li>REST API</li>
+                  <li>HackHall</li>
+                </ul>
+                </div>
+               </div><!-- /collapse -->
 
-      <br> 
-      <h3 class="text-center">What they say about us!</h3>
-      <hr>
-     
+          
+            <div class="thumbnail">
+              <img class="a" src="images/layers.png">
+              <h5>in Addition</h5>
+              <p> In addition to four aforementioned major examples, there are many other smaller ones. Their full source code is available for examination at <a href="http://github.com/azat-co/expressjsguide">github.com/azat-co/expressjsguide</a></p>
+            </div>
+          </div> <!-- col-md-3 -->
+        </section>
+      </div>  
+     </section>
+
+<section class="highlight testimonials">
+  <div class="container">
+
+  <br> 
+    <h3 class="text-center">What they say about us!</h3>
+  <hr> 
+
+
+  <div id="cbp-qtrotator" class="cbp-qtrotator">
+    <div class="cbp-qtcontent cbp-qtcurrent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="twitter-tweet"><p>This is a great book to learn and reference Express.js&#10;intro to express.js <a href="http://t.co/EHgghwikpD">http://t.co/EHgghwikpD</a> via <a href="https://twitter.com/azat_co">@azat_co</a> <a href="https://twitter.com/search?q=%23express&amp;src=hash">#express</a>.js <a href="https://twitter.com/search?q=%23node&amp;src=hash">#node</a>.js</p>&mdash; Josh Pagley (@JoshPagley) <a href="https://twitter.com/JoshPagley/statuses/397714379782627328">November 5, 2013</a></blockquote>
+          </script>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="twitter-tweet"><p>Excellent ebook about Node.js Express framework:&#10;Express.js Guide&#10;<a href="http://t.co/ZatBm6wt4e">http://t.co/ZatBm6wt4e</a>&#10;by <a href="https://twitter.com/azat_co">@azat_co</a></p>&mdash; Caio Ribeiro Pereira (@crp_underground) <a href="https://twitter.com/crp_underground/statuses/395520014435893248">October 30, 2013</a></blockquote>
+        </div>
+        <div class="col-md-4">
+          <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> I&#39;m new with expressjs and find this book very useful! Good examples, and good for kindle users too.</p>&mdash; Babs Daher (@BARdaher) <a href="https://twitter.com/BARdaher/statuses/395203525292343297">October 29, 2013</a></blockquote>
+        </div>
+      </div>
+    </div><!--/cbp-qtcontent-->
+
+
+     <div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+        <div class="row">
           <div class="col-md-4">
-          <div class="highlight testimonials">
-      <div class="container">
-
-
-    <section id="testimonial" class="sec-wrap">
-          <div class="container">
-            <div class="row">
-              <div class="col12">
-                <h2 class="sec-title"><span>Real Testimonials</span></h2> 
-              </div><!--span12-->
-            </div>
-            <div class="row testimonials-box">
-                <div class="span12">
-
-                <div id="cbp-qtrotator" class="cbp-qtrotator">
-                  <div class="cbp-qtcontent cbp-qtcurrent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
-                    <div class="row">
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p>This is a great book to learn and reference Express.js&#10;intro to express.js <a href="http://t.co/EHgghwikpD">http://t.co/EHgghwikpD</a> via <a href="https://twitter.com/azat_co">@azat_co</a> <a href="https://twitter.com/search?q=%23express&amp;src=hash">#express</a>.js <a href="https://twitter.com/search?q=%23node&amp;src=hash">#node</a>.js</p>&mdash; Josh Pagley (@JoshPagley) <a href="https://twitter.com/JoshPagley/statuses/397714379782627328">November 5, 2013</a></blockquote>
-                        </script>
-                      </div>
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p>Excellent ebook about Node.js Express framework:&#10;Express.js Guide&#10;<a href="http://t.co/ZatBm6wt4e">http://t.co/ZatBm6wt4e</a>&#10;by <a href="https://twitter.com/azat_co">@azat_co</a></p>&mdash; Caio Ribeiro Pereira (@crp_underground) <a href="https://twitter.com/crp_underground/statuses/395520014435893248">October 30, 2013</a></blockquote>
-                      </div>
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> I&#39;m new with expressjs and find this book very useful! Good examples, and good for kindle users too.</p>&mdash; Babs Daher (@BARdaher) <a href="https://twitter.com/BARdaher/statuses/395203525292343297">October 29, 2013</a></blockquote>
-                      </div>
-                    </div>
-                  </div><!--/cbp-qtcontent-->
-
-
-                 <div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
-                    <div class="row">
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> Awesome!!!</p>&mdash; Lucas Churchill (@_agtlucas) <a href="https://twitter.com/_agtlucas/statuses/397130257142018048">November 3, 2013</a></blockquote>
-                      </div>
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p>Check out <a href="https://twitter.com/azat_co">@azat_co</a>&#39;s new book on Express.js with an API reference, quick start guides and hands-on tutorials. <a href="https://t.co/CLCyQPIOhQ">https://t.co/CLCyQPIOhQ</a></p>&mdash; Brian Rinaldi (@remotesynth) <a href="https://twitter.com/remotesynth/statuses/392711542245842945">October 22, 2013</a></blockquote>
-                      </div>
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> I like it and I want to get it in my brain. Your other books <a href="https://twitter.com/search?q=%23RPJS&amp;src=hash">#RPJS</a> and <a href="https://twitter.com/search?q=%23ohmyjs&amp;src=hash">#ohmyjs</a> too :-)</p>&mdash; Rolf Bulk (@robumanX) <a href="https://twitter.com/robumanX/statuses/395082201580060672">October 29, 2013</a></blockquote>
-                      </div>
-                    </div>
-
-                  </div><!--/cbp-qtcontent-->
-
-
-                  <div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
-                    <div class="row">
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> Immensely benefited from your ExpressJS guide. Your blog is a huge timesaver for building Node.js apps!! <a href="https://twitter.com/search?q=%23nodejs&amp;src=hash">#nodejs</a></p>&mdash; Indrajit Chakrabarty (@indyfromoz) <a href="https://twitter.com/indyfromoz/statuses/397865380439261185">November 5, 2013</a></blockquote>
-                      </div>
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p>I’m reading &quot;Express.js Guide — the most popular Node.js framework’s manual&quot; by <a href="https://twitter.com/azat_co">@azat_co</a> <a href="https://twitter.com/search?q=%23RPJS&amp;src=hash">#RPJS</a> <a href="https://t.co/WSPS3KbZ9S">https://t.co/WSPS3KbZ9S</a></p>&mdash; Manuel Kiessling (@manuelkiessling) <a href="https://twitter.com/manuelkiessling/statuses/392760255249002496">October 22, 2013</a></blockquote>
-                      </div>
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p>I just got the Express.js Guide from <a href="https://twitter.com/azat_co">@azat_co</a> on <a href="https://twitter.com/gumroad">@Gumroad</a>: <a href="http://t.co/6c1nXMe9mZ">http://t.co/6c1nXMe9mZ</a> :)</p>&mdash; Stefan Ritter (@S__Ritter) <a href="https://twitter.com/S__Ritter/statuses/397028329988968448">November 3, 2013</a></blockquote>
-                      </div>
-                    </div>
-                  </div><!--/cbp-qtcontent-->
-                  <div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
-                    <div class="row">
-                      <div class="span4">
-                       <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> yes i know it’s very helpful</p>&mdash; Nenad Vulic  (@nenadvulic) <a href="https://twitter.com/nenadvulic/statuses/397820122502795264">November 5, 2013</a></blockquote>
-                      </div>
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p>just bought Express.js Guide from <a href="https://twitter.com/azat_co">@azat_co</a> on <a href="https://twitter.com/gumroad">@Gumroad</a>: <a href="https://t.co/XHRraAvxm4">https://t.co/XHRraAvxm4</a></p>&mdash; martin drenovac (@drenovac) <a href="https://twitter.com/drenovac/statuses/396826352726196224">November 3, 2013</a></blockquote>
-                      </div>
-                      <div class="span4">
-                        <blockquote class="twitter-tweet"><p>I have to admit <a href="https://twitter.com/search?q=%23NodeJS&amp;src=hash">#NodeJS</a>+<a href="https://twitter.com/search?q=%23ExpressJs&amp;src=hash">#ExpressJs</a> is awesome and fun to code with. Thanks <a href="https://twitter.com/azat_co">@azat_co</a> for such an easy walk through <a href="https://twitter.com/search?q=%23ExpressJS&amp;src=hash">#ExpressJS</a></p>&mdash; Antonio Ramirez (@tonydspaniard) <a href="https://twitter.com/tonydspaniard/statuses/402069629217935360">November 17, 2013</a></blockquote>
-                      </div>
-                      <!-- TWITTER widget for rendering tweets -->
-                      <!-- script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script -->
-                    </div>
-                  </div><!--/cbp-qtcontent-->
-
-                </div><!--/cbp-qtrotator-->
-                </div><!--span12-->
-            </div><!--/row-->
-              
-
-              
-            </div>
-          </div><!--/col-md-6 --> 
-          
+            <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> Awesome!!!</p>&mdash; Lucas Churchill (@_agtlucas) <a href="https://twitter.com/_agtlucas/statuses/397130257142018048">November 3, 2013</a></blockquote>
+          </div>
           <div class="col-md-4">
-           
+            <blockquote class="twitter-tweet"><p>Check out <a href="https://twitter.com/azat_co">@azat_co</a>&#39;s new book on Express.js with an API reference, quick start guides and hands-on tutorials. <a href="https://t.co/CLCyQPIOhQ">https://t.co/CLCyQPIOhQ</a></p>&mdash; Brian Rinaldi (@remotesynth) <a href="https://twitter.com/remotesynth/statuses/392711542245842945">October 22, 2013</a></blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> I like it and I want to get it in my brain. Your other books <a href="https://twitter.com/search?q=%23RPJS&amp;src=hash">#RPJS</a> and <a href="https://twitter.com/search?q=%23ohmyjs&amp;src=hash">#ohmyjs</a> too :-)</p>&mdash; Rolf Bulk (@robumanX) <a href="https://twitter.com/robumanX/statuses/395082201580060672">October 29, 2013</a></blockquote>
+          </div>
+        </div>
+
+      </div><!--/cbp-qtcontent-->
 
 
+      <div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+        <div class="row">
+          <div class="col-md-4">
+            <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> Immensely benefited from your ExpressJS guide. Your blog is a huge timesaver for building Node.js apps!! <a href="https://twitter.com/search?q=%23nodejs&amp;src=hash">#nodejs</a></p>&mdash; Indrajit Chakrabarty (@indyfromoz) <a href="https://twitter.com/indyfromoz/statuses/397865380439261185">November 5, 2013</a></blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="twitter-tweet"><p>I’m reading &quot;Express.js Guide — the most popular Node.js framework’s manual&quot; by <a href="https://twitter.com/azat_co">@azat_co</a> <a href="https://twitter.com/search?q=%23RPJS&amp;src=hash">#RPJS</a> <a href="https://t.co/WSPS3KbZ9S">https://t.co/WSPS3KbZ9S</a></p>&mdash; Manuel Kiessling (@manuelkiessling) <a href="https://twitter.com/manuelkiessling/statuses/392760255249002496">October 22, 2013</a></blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="twitter-tweet"><p>I just got the Express.js Guide from <a href="https://twitter.com/azat_co">@azat_co</a> on <a href="https://twitter.com/gumroad">@Gumroad</a>: <a href="http://t.co/6c1nXMe9mZ">http://t.co/6c1nXMe9mZ</a> :)</p>&mdash; Stefan Ritter (@S__Ritter) <a href="https://twitter.com/S__Ritter/statuses/397028329988968448">November 3, 2013</a></blockquote>
+          </div>
+        </div>
+      </div><!--/cbp-qtcontent-->
+      <div class="cbp-qtcontent" style="transition: opacity 700ms ease; -webkit-transition: opacity 700ms ease;">
+        <div class="row">
+          <div class="col-md-4">
+           <blockquote class="twitter-tweet"><p><a href="https://twitter.com/azat_co">@azat_co</a> yes i know it’s very helpful</p>&mdash; Nenad Vulic  (@nenadvulic) <a href="https://twitter.com/nenadvulic/statuses/397820122502795264">November 5, 2013</a></blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="twitter-tweet"><p>just bought Express.js Guide from <a href="https://twitter.com/azat_co">@azat_co</a> on <a href="https://twitter.com/gumroad">@Gumroad</a>: <a href="https://t.co/XHRraAvxm4">https://t.co/XHRraAvxm4</a></p>&mdash; martin drenovac (@drenovac) <a href="https://twitter.com/drenovac/statuses/396826352726196224">November 3, 2013</a></blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="twitter-tweet"><p>I have to admit <a href="https://twitter.com/search?q=%23NodeJS&amp;src=hash">#NodeJS</a>+<a href="https://twitter.com/search?q=%23ExpressJs&amp;src=hash">#ExpressJs</a> is awesome and fun to code with. Thanks <a href="https://twitter.com/azat_co">@azat_co</a> for such an easy walk through <a href="https://twitter.com/search?q=%23ExpressJS&amp;src=hash">#ExpressJS</a></p>&mdash; Antonio Ramirez (@tonydspaniard) <a href="https://twitter.com/tonydspaniard/statuses/402069629217935360">November 17, 2013</a></blockquote>
+          </div>
+          <!-- TWITTER widget for rendering tweets -->
+          >
+        </div>
+      </div><!--/cbp-qtcontent-->
 
-            </div>
-          
+    </div><!--/cbp-qtrotator-->
 
-          </div><!--/col-md-6 -->
-        
-          </div><!--/col-md-6 -->
-          
-           
-         
-    </div><!-- row -->
-  </section>  
+  </div><!--container-->
+</section>  
 
 
 <section class="desc">    
@@ -329,77 +334,96 @@
       
 
   <section class="row breath planpricing">
+  <div class="container">
     <a name="purchase"></a>
     <div class="section-title">
-      <h2> Available From These Vendors </h2>
+      <h2> Buy The Book </h2>
     </div>
-    <div class="col-md-4">
-                  <div class="planname"><a href="http://www.amazon.com/gp/product/1484200381/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1484200381&linkCode=as2&tag=rpjs-20&linkId=ZSHJJGT3VEYKHXLF#">
-    <div class="pricing color1">
-Amazon </a></div>
-        <div class="price"> <span class="curr">Pre-order is available</span><span class="per"></span></div></a>
-         
-      </div><!--/pricing -->
+    
+    <div class="col-md-4">  
+      <a href="http://www.amazon.com/gp/product/1484200381/ref=as_li_tl?ie=UTF8%26camp=1789%26creative=390957%26creativeASIN=1484200381%26linkCode=as2%26tag=rpjs-20%26linkId=ZSHJJGT3VEYKHXLF#">
+        <div class="pricing">
+          <div class="planname">
+            <img src="images/amazon.jpg">
+          </div>
+            <div class="price">
+              <div class="btn btn-warning btn-outline" class="w"><a href="http://www.amazon.com/gp/product/1484200381/ref=as_li_tl?ie=UTF8%26camp=1789%26creative=390957%26creativeASIN=1484200381%26linkCode=as2%26tag=rpjs-20%26linkId=ZSHJJGT3VEYKHXLF#">Pre-order is available</a></div>
+            </div>
+         </div><!--/pricing -->
+      </a>
     </div><!--/col-md-4-->
+      
     <div class="col-md-4">
-      <div class="pricing color2">
-        <div class="planname"><a href="http://www.apress.com/9781484200384">Apress</a> </div>
-        <div class="price"> <span class="curr">Alpha(early access) version is available</span><span class="per"></span></div>
-        <div class="billing"></div> 
+      <a href="http://www.apress.com/9781484200384">
+      <div class="pricing">
+        <div class="planname">
+          <img src="images/ApressLogo.jpg">
+        </div>  
+        <div class="price">
+          <div class="btn btn-warning btn-outline" class="w">Alpha(early access)version is available</a></div>
+        </div>
       </div><!--/pricing -->
+      </a> 
     </div><!--/col-md-4-->
-    <div class="col-md-4">
-      <div class="pricing color4">
-        <div class="planname"><a href="http://www.barnesandnoble.com/w/pro-expressjs-apress/1119879199">Barnes&Nobles</a></div>
-        <div class="price"> <span class="curr"> 
-       </span><span class="per">  Pre-order is available
-          </span></div>
-        <div class="billing"></div> 
-        <div class="billing"></div> 
+      
+    <div class="col-md-4"> 
+      <a href="http://www.barnesandnoble.com/w/pro-expressjs-apress/1119879199">
+      <div class="pricing">
+        <div class="planname"><img src="images/bn_logo.gif"></div>
+        <div class="price">
+          <div class="btn btn-warning btn-outline" class="w"> Pre-Order is available</a></div>
+        </div>
       </div><!--/pricing -->
+      </a>
     </div><!--/col-md-4-->
+  </div>
   </section><!-- /section planpricing -->
- </div>
+
 
       
      
       <!-- ******************** FOOTER ******************** -->   
     <main class="footercta" role="main">
       <div class="container">
+      <div class="col-md-4">
         <h3 class="w"> About the Author</h3>
                 <img class="img-responsive img-circle center" src="images/author-photo-small.jpg">
                 <h4 class="w">Azat Mardan</h4>
-                <p class="w">
-                 <p>Azat Mardan has over 12 years of experience in web, mobile and software development. With a Bachelor’s Degree in Informatics and a Master of Science in Information Systems Technology degree, Azat possesses deep academic knowledge as well as extensive practical experience.</p>
+              <div id="socialicons">
+           
+           <a href="https://twitter.com/azat_co" >
+           <img src="images/twitter.png"></a>  
+             <a href="https://www.facebook.com/people/Azat-Mardan/1640484994" ><img src="images/facebook.png"></a> 
+           <a href="https://www.linkedin.com/in/azatm" ><img src="images/linkedin.png"></a>
+           
+         </div>
+      </div>
+      <div class="col-md-8 details-col">
+        <p>AZAT MARDAN has over 12 years of experience in web, mobile and software development. With a Bachelor’s Degree in Informatics and a Master of Science in Information Systems Technology degree, Azat possesses deep academic knowledge as well as extensive practical experience.</p>
 
-                    <p>Currently, Azat works as a Team Lead / Senior Software Engineer at <a href="http://docusign.com">DocuSign</a>, where his team rebuilds 50 million user product (DocuSign web app) using the tech stack of Node.js, Express.js, Backbone.js, CoffeeScript, Jade, Stylus and Redis.</p>
+        <p>Currently, Azat works as a Team Lead / Senior Software Engineer at <a href="http://docusign.com">DocuSign</a>, where his team rebuilds 50 million user product (DocuSign web app) using the tech stack of Node.js, Express.js, Backbone.js, CoffeeScript, Jade, Stylus and Redis.</p>
 
-                    <p>Recently, he worked as an engineer at the curated social media news aggregator website, <a href="http://storify.com">Storify.com</a> (acquired by <a href="http://livefyre.com">LiveFyre</a>) which is used by BBC, NBC, CNN, The White House and others. Storify runs everything on Node.js unlike other companies. It&#8217;s the maintainer of the open-source library <a href="http://npmjs.org/jade-browser">jade-browser</a>. </p>
+        <p>Recently, he worked as an engineer at the curated social media news aggregator website, <a href="http://storify.com">Storify.com</a> (acquired by <a href="http://livefyre.com">LiveFyre</a>) which is used by BBC, NBC, CNN, The White House and others. Storify runs everything on Node.js unlike other companies. It&#8217;s the maintainer of the open-source library <a href="http://npmjs.org/jade-browser">jade-browser</a>. </p>
 
-                    <p>Before that, Azat worked as a CTO/co-founder at <a href="http://www.crunchbase.com/company/gizmo">Gizmo</a> — an enterprise cloud platform for mobile marketing campaigns, and has undertaken the prestigious <a href="http://500.co/">500 Startups</a> business accelerator program. </p>
+        <p>Before that, Azat worked as a CTO/co-founder at <a href="http://www.crunchbase.com/company/gizmo">Gizmo</a> — an enterprise cloud platform for mobile marketing campaigns, and has undertaken the prestigious <a href="http://500.co/">500 Startups</a> business accelerator program. </p>
 
-                    <p>Prior to this, Azat was developing he developed mission-critical applications for government agencies in Washington, DC, including the <a href="http://nih.gov">National Institutes of Health</a>, the <a href="http://ncbi.nlm.nih.gov">National Center for Biotechnology Information</a>, and the <a href="http://fdic.gov">Federal Deposit Insurance Corporation</a>, as well as <a href="http://lockheedmartin.com">Lockheed Martin</a>. </p>
+        <p>Prior to this, Azat was developing he developed mission-critical applications for government agencies in Washington, DC, including the <a href="http://nih.gov">National Institutes of Health</a>, the <a href="http://ncbi.nlm.nih.gov">National Center for Biotechnology Information</a>, and the <a href="http://fdic.gov">Federal Deposit Insurance Corporation</a>, as well as <a href="http://lockheedmartin.com">Lockheed Martin</a>. </p>
 
-                    <p>Azat is a frequent attendee at Bay Area tech meet-ups and hackathons (<a href="http://angelhack.com">AngelHack</a> hackathon ’12 finalist with team <a href="http://fashionmetric.com">FashionMetric.com</a>).</p>
+        <p>Azat is a frequent attendee at Bay Area tech meet-ups and hackathons (<a href="http://angelhack.com">AngelHack</a> hackathon ’12 finalist with team <a href="http://fashionmetric.com">FashionMetric.com</a>).</p>
 
-                    <p>In addition, Azat teaches technical classes at <a href="http://generalassemb.ly">General Assembly</a>, <a href="http://hackreactor.com">Hack Reactor</a>, <a href="http://parisoma.com">pariSOMA</a> and <a href="http://marakana.com">Marakana</a> (acquired by Twitter) to much acclaim.</p>
+        <p>In addition, Azat teaches technical classes at <a href="http://generalassemb.ly">General Assembly</a>, <a href="http://hackreactor.com">Hack Reactor</a>, <a href="http://parisoma.com">pariSOMA</a> and <a href="http://marakana.com">Marakana</a> (acquired by Twitter) to much acclaim.</p>
 
-                    <p>In his spare time, he writes about technology on his blog: <a href="http://webapplog.com">webAppLog.com</a> which is <a href="http://expressjsguide.com/assets/img/expressjs-tutorial.png">number one</a> in &#8220;express.js tutorial&#8221; Google search results. Azat is also the author of <a href="http://expressjsguide.com">Express.js Guide</a>, <a href="http://rpjs.co">Rapid Prototyping with JS</a> and <a href="http://leanpub.com/ohmyjs">Oh My JS</a>; and the creator of open-source Node.js projects, including <a href="http://npmjs.org/expressworks">ExpressWorks</a>, <a href="http://npmjs.org/mongoui">mongoui</a> and <a href="http://hackhall.com">HackHall</a>. </p>
-         
+        <p>In his spare time, he writes about technology on his blog: <a href="http://webapplog.com">webAppLog.com</a> which is <a href="http://expressjsguide.com/assets/img/expressjs-tutorial.png">number one</a> in &#8220;express.js tutorial&#8221; Google search results. Azat is also the author of <a href="http://expressjsguide.com">Express.js Guide</a>, <a href="http://rpjs.co">Rapid Prototyping with JS</a> and <a href="http://leanpub.com/ohmyjs">Oh My JS</a>; and the creator of open-source Node.js projects, including <a href="http://npmjs.org/expressworks">ExpressWorks</a>, <a href="http://npmjs.org/mongoui">mongoui</a> and <a href="http://hackhall.com">HackHall</a>.</p>
+        </div>
       </div><!--/container -->
     </main><!--/main -->
  
     <div class="container">
       <section class="row breath">
         <div class="col-md-12 footerlinks">
-                     <p>Pro Express.js: The Comprehensive Book on Pro Express.js &copy; 2014 <a href="http://azat.co">Azat Mardan</a>. All rights reserved.</p>
+                     <p>Pro Express.js: The Comprehensive Book on Pro Express.js &copy; 2014 <a href="http://azat.co">Azat Mardan</a>All rights reserved.</p>
             <p class="text-center">
-
-           <a href="https://twitter.com/azat_co" >
-           <img src="images/twitter.png"></a>  
-             <a href="https://www.facebook.com/people/Azat-Mardan/1640484994" ><img src="images/facebook.png"></a> 
-           <a href="https://www.linkedin.com/in/azatm" ><img src="images/linkedin.png"></a>
-           </p>
+        </div>
         </div>
       </section><!--/section -->
     </div><!--/container -->
@@ -412,6 +436,8 @@ Amazon </a></div>
 <script src="js/easing.js"></script>
 <script src="js/nicescroll.js"></script>
 <script src="js/lightbox.min.js"></script> 
+<script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="plugins/QuotesRotator/js/jquery.cbpQTRotator.min.js"></script>
  
 <script>
  $(window).load(function() { 
@@ -425,18 +451,22 @@ $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
     $(this).ekkoLightbox();
 }); 
 
- $(function() {
-    $('.scrollto, .gototop').bind('click',function(event){
-     var $anchor = $(this);
-     $('html, body').stop().animate({
-         scrollTop: $($anchor.attr('href')).offset().top
-          }, 1500,'easeInOutExpo');
-     event.preventDefault();
-      });
-  });
-  $(window).load(function(){
-    $('.preloader').fadeOut(3000); // set duration in brackets
-    init();
+
+$(function() {
+  console.log($('#cbp-qtrotator'));
+  $('#cbp-qtrotator').cbpQTRotator();
+
+  $('.scrollto, .gototop').bind('click',function(event){
+   var $anchor = $(this);
+   $('html, body').stop().animate({
+       scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500,'easeInOutExpo');
+   event.preventDefault();
+    });
+});
+$(window).load(function(){
+  $('.preloader').fadeOut(3000); // set duration in brackets
+  init();
 });      
 
 </script>
