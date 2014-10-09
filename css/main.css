@@ -148,11 +148,13 @@ img.center {
 }
 
 
-.masthead .message h2,h3,h4 {
+.masthead .message h2, 
+.masthead .message h3, 
+.masthead .message h4 {
 	color: #fff;
-
 	text-transform: none;
 }
+
  /* General button style (reset) */
  .btn-lg{
  	font-size: 25px;
@@ -277,9 +279,9 @@ floating
 .heroimg img, .clientlogo img {
 	max-width:100%;
 }
-/*==========  FEATURES ==============*/
+/*==========  table of content ==============*/
 .desc {
-    background-color: #f2f2f2;
+    /*background-color: #f2f2f2;*/
 }
 .desc ul {
 	list-style: square;
@@ -440,7 +442,9 @@ blockquote small{
 
 
 /*==========  PLANS AND PRICING ==============*/
-
+.planpricing {
+	background-color: #f2f2f2;
+}
 .pricing {
 	padding:0px;
 	color:#FFF;
@@ -452,9 +456,10 @@ blockquote small{
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
+	background-color: #fff;
 } 
 
-.pricing a{
+.pricing a {
   color: #fff;
 }
 
