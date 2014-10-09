@@ -548,7 +548,11 @@ blockquote small{
 .footercta .details-col p {
 	text-align: left;
 }
+.footercta h3, h4{
+	color: #fff;
+	text-transform: none;	
 
+}
 .footercta .details-col a {
 	color: #71A3fd;
 }
