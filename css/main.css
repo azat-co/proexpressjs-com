@@ -49,6 +49,9 @@ h5 {
 	font-size: 30px;
 	font-weight: 300;
 }
+h6{
+	font-size: 20px;
+}
 h1,
 h2,
 h3,
@@ -285,14 +288,14 @@ floating
 .heroimg img, .clientlogo img {
 	max-width:100%;
 }
-/*==========  table of content ==============*/
-.desc {
-    /*background-color: #f2f2f2;*/
+                 /*==========  table of content ==============*/
+.tcontent {
+     list-style: none;
+      margin: 0 auto !important;
+  float: none !important;
 }
-.desc ul {
-	list-style: square;
-	padding: 0 0 10px 25px;
-}
+
+
 .features {
 	margin:25px 0;
 }
