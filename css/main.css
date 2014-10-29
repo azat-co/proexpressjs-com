@@ -125,6 +125,7 @@ img.center {
       rgba(32, 32, 32, 0.7)
     ),
     url("../images/book.jpg");
+    background-color: #202020; 
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-attachment:fixed;
@@ -514,7 +515,8 @@ blockquote small{
       rgba(32, 32, 32, 0.9)
     ),
     url("../images/book.jpg");
-	background-repeat: no-repeat;
+    background-color: #202020; 
+    background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
