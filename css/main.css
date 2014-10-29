@@ -52,11 +52,12 @@ h5 {
 h6{
 	font-size: 20px;
 }
+
 h1,
 h2,
 h3,
 h4 {
-	color: black;
+	color:#404040;
 	text-transform: uppercase;
 }
 
@@ -81,7 +82,9 @@ img.center {
     font-size: 45px;
 }
 
-.breath{margin:50px auto;}
+.breath{
+	margin:50px auto;
+}
 
 .highlight{background:#f4f4f4;margin-top:40px;}
  /* preloader */
@@ -107,8 +110,7 @@ img.center {
 	margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
  
- 
- /* MASTHEAD SECTION */ 
+    /*=======================  MASTHEAD ================================*/
  
 
 .masthead{
@@ -170,20 +172,11 @@ img.center {
  	
 
  }
-
-
 .btn-large {
 	font-size: 25px;
 	padding:20px 50px;
 	margin:5px 10px;
 }
-
-
-
- 
-
-
- 
 
 
 /*==============================================
@@ -227,7 +220,7 @@ floating
 }
 
 /*
-/*==========  Book Highlights ==============*/
+              /*==========  Book Highlights ==============*/
 
 
 
@@ -248,11 +241,15 @@ floating
                  /*==========  TABLE OF CONTENT ==============*/
 .tcontent {
 	padding-bottom: 50px;
-  list-style: none;
-  margin: 0 auto !important;
-  float: none !important;
+  	list-style: none;
+  	margin: 0 auto !important;
+  	float: none !important;
 }
 
+.tcontent h3 {
+	text-align: center;
+	padding-bottom: 20px;
+}
 
 .features {
 	margin:25px 0;
@@ -265,8 +262,9 @@ floating
 	color: #94a3a8;
 }
 .thumbnail col-md-6{
-border-image-width: 100px;
+	border-image-width: 100px;
 }
+
 .highlights-content .thumbnail img {
 	width: 50px;
 }
@@ -318,6 +316,7 @@ blockquote small{
 	color:#b8b8b8;
 	font-size:12px;
 }
+
 .testi-thumb{
 	margin-bottom:20px;
 }
@@ -404,7 +403,7 @@ blockquote small{
 
 
 
-                /*==========  PLANS AND PRICING ==============*/
+                /*==========  Buy Links ==============*/
 
 .buylinks{
 	background-color: #f2f2f2;
@@ -414,6 +413,10 @@ blockquote small{
 	padding-bottom: 50px; 
 	color: #384047;
 
+}
+
+.buylinks .box {
+	padding-bottom: 20px;
 }
 .container .buy .links{
 	background-color: #1E1F2C;
@@ -534,7 +537,7 @@ blockquote small{
 .footercta img{
 	width: 200px;
 }
-
+/* large screens */
 .footercta p{
 	margin-right: 80px;
 	margin-left: 80px;
@@ -557,7 +560,7 @@ blockquote small{
 }
 
 
-/*========== CUSTOM MEDIA QUERIES==============*/
+       /*========== CUSTOM MEDIA QUERIES==============*/
 
 
 /*MEDIA QUERIES*/
@@ -580,6 +583,13 @@ font-size: 35px;
  .breath {
 margin: 30px auto;
 }
+ .masthead h2{
+   	font-size: 45px;
+   }
+ .masthead h3{
+   	font-size:35px;
+   }
+
 }
 @media (max-width: 767px) {
  	h1 {
@@ -600,13 +610,33 @@ margin: 30px auto;
 	padding: 40px 15px;
 	}
 
+	.masthead h2{
+   	font-size: 45px;
+   }
+
+   .masthead h3{
+   	font-size:35px;
+   }
+
 }
 
  @media (max-width: 480px) {
 	 /*Media Queries for smaller devices*/
-	 .masthead {	
-	background-attachment: scroll;
-}
+	.masthead {	
+		background-attachment: scroll;
+	}
+	.footercta p {
+		margin-right: 5px;
+		margin-left: 5px;
+		text-align: left;
+	}
+
+   .masthead h2{
+   	font-size: 45px;
+   }
+    .masthead h3{
+   	font-size:35px;
+   }
 
 }
  
