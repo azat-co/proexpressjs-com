@@ -58,12 +58,12 @@ h2,
 h3,
 h4 {
 	color:#404040;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 }
 
 ul {
 	margin: 0;
-	padding: 0px; 
+	padding: 0px;
 	list-style: none;
 }
 
@@ -73,7 +73,7 @@ a:hover,a:focus{color:#5173bd;}
 i {
     font-size: 40px;
 }
-img.center { 
+img.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -109,23 +109,23 @@ img.center {
 	background-position:center;
 	margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
- 
+
     /*=======================  MASTHEAD ================================*/
- 
+
 
 .masthead{
 	position:relative;
-	padding:80px 15px; 
-	color:#FFF; 
-	text-align:center; 
-	text-shadow:0 1px 0 rgba(0,0,0,.1); 
-    background: 
+	padding:80px 15px;
+	color:#FFF;
+	text-align:center;
+	text-shadow:0 1px 0 rgba(0,0,0,.1);
+    background:
     linear-gradient(
-      rgba(32, 32, 32, 0.7), 
+      rgba(32, 32, 32, 0.7),
       rgba(32, 32, 32, 0.7)
     ),
     url("../images/book.jpg");
-    background-color: #202020; 
+    background-color: #202020;
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-attachment:fixed;
@@ -160,8 +160,8 @@ img.center {
 }
 
 
-.masthead .message h2, 
-.masthead .message h3, 
+.masthead .message h2,
+.masthead .message h3,
 .masthead .message h4 {
 	color: #fff;
 	text-transform: none;
@@ -170,7 +170,7 @@ img.center {
  /* General button style (reset) */
  .btn-lg{
  	font-size: 25px;
- 	
+
 
  }
 .btn-large {
@@ -189,7 +189,7 @@ floating
 	animation-name: floating;
 	-webkit-animation-name: floating;
 
-	animation-duration: 1.5s;	
+	animation-duration: 1.5s;
 	-webkit-animation-duration: 1.5s;
 
 	animation-iteration-count: infinite;
@@ -198,26 +198,26 @@ floating
 
 @keyframes floating {
 	0% {
-		transform: translateY(0%);	
+		transform: translateY(0%);
 	}
 	50% {
-		transform: translateY(8%);	
-	}	
+		transform: translateY(8%);
+	}
 	100% {
 		transform: translateY(0%);
-	}			
+	}
 }
 
 @-webkit-keyframes floating {
 	0% {
-		-webkit-transform: translateY(0%);	
+		-webkit-transform: translateY(0%);
 	}
 	50% {
-		-webkit-transform: translateY(8%);	
-	}	
+		-webkit-transform: translateY(8%);
+	}
 	100% {
 		-webkit-transform: translateY(0%);
-	}			
+	}
 }
 
 /*
@@ -271,7 +271,7 @@ floating
 }
 
 .heroimg .thumbnail {
-	padding: 15% 10% 0 10%
+	padding: 50% 10% 0 10%
 }
 
 /*Hover Animation*/
@@ -411,7 +411,7 @@ blockquote small{
 	padding-bottom: 200px;
 }
 .buy-section-title h2{
-	padding-bottom: 50px; 
+	padding-bottom: 50px;
 	color: #384047;
 
 }
@@ -437,7 +437,7 @@ blockquote small{
 	-moz-border-radius:3px;
 	border-radius:5px;
 	background-color: #fff;
-} 
+}
 
 .buy a {
   color:inherit;
@@ -449,9 +449,12 @@ blockquote small{
 
 .buy .links {
 	text-align: center;
-	text-transform:uppercase;
+
 	font-weight:600;
 	color: #333;
+}
+.buy .order a {
+		text-transform:uppercase;
 }
 .links h4{
 	color: #FF7F00;
@@ -469,9 +472,9 @@ blockquote small{
  	font-size: 22px;
     background-color: #f36;
     border-color: #f36;
-    color: #fff; 
+    color: #fff;
     transition: all .5s;
-    
+
 }
 
  .btn-warning:hover{
@@ -498,7 +501,7 @@ blockquote small{
 	z-index:2;
 }
 
- 
+
 
                      /*========== FOOTER ==============*/
 
@@ -509,13 +512,13 @@ blockquote small{
 	font-size: 18px;
 	text-align: center;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-	background: 
+	background:
     linear-gradient(
-      rgba(32, 32, 32, 0.9), 
+      rgba(32, 32, 32, 0.9),
       rgba(32, 32, 32, 0.9)
     ),
-    url("../images/book.jpg");
-    background-color: #202020; 
+    url("../images/AYP1213827_Veer.jpg");
+    background-color: #202020;
     background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -529,11 +532,11 @@ blockquote small{
 }
 .footercta h3, h4{
 	color: #fff;
-	text-transform: none;	
+	text-transform: none;
 
 }
 .footercta .details-col a {
-	color: #71A3fd;
+	color: #7D98C8;
 }
 
 .footercta img{
@@ -568,6 +571,7 @@ blockquote small{
 /*MEDIA QUERIES*/
 
 @media (max-width: 991px) {
+
  h1 {
 font-size: 35px;
 line-height: 50px;
@@ -591,6 +595,9 @@ margin: 30px auto;
  .masthead h3{
    	font-size:35px;
    }
+	.heroimg .thumbnail {
+		padding: 9% 10% 0 10%
+	}
 
 }
 @media (max-width: 767px) {
@@ -598,12 +605,12 @@ margin: 30px auto;
 	font-size: 30px;
 	line-height: 40px;
 	}
- 
+
  	h2 {
 	font-size: 30px;
 	line-height: 40px;
 	}
- 
+
  	.subscribe [class*="col-"]:not(:first-child) {
  	margin-top: 30px;
 	}
@@ -624,7 +631,7 @@ margin: 30px auto;
 
  @media (max-width: 480px) {
 	 /*Media Queries for smaller devices*/
-	.masthead {	
+	.masthead {
 		background-attachment: scroll;
 	}
 	.footercta p {
@@ -641,5 +648,7 @@ margin: 30px auto;
    }
 
 }
- 
- 
+
+ #cbp-qtrotator.cbp-qtrotator{
+ 	min-height: 600px;
+ }
